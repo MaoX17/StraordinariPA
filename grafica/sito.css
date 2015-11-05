@@ -1,0 +1,210 @@
+/*stili per il layout fluido*/
+html,body {
+	margin: 0;
+	font-family: Arial, Helvetica, "Sans Serif", sans-serif;
+	color: #333333;
+	background: #FFFFAA url(../grafica/images/bg.gif) repeat scroll 0 0;
+}
+
+body {
+	padding: 1em 2%;
+	font-size: 76%;
+}
+	
+div#box {
+	background: #FFFFFF url(../grafica/images/menubg.jpg) repeat-y scroll 0 0;
+	color: #333333;
+/*	width: 960px;*/
+	width: 1060px;
+	padding:0;
+	border: 1px solid;
+	border-color: #333333;
+}
+
+div#header {
+	background-color:#FDF1BF;
+	color: #333333;
+}
+div#header2 {
+	background: #D6EFCC url(../grafica/images/left1bg.jpg) repeat-x scroll 0 0;
+	color: #333333;
+	height: 20px;
+}
+
+
+/*stili specifici per il layout*/
+div#menu { 
+	float:left;
+	/* Inizia il Simplified Box Model Hack */
+	width:100px; /* Dimensioni per Opera 5 */
+	width:110px; /* Dimensioni per Explorer 5.x */
+	width:100px; /* Dimensioni per browser standard compliant */
+	padding:1em 0 0 0px;
+	
+}
+div#posts { 
+	margin-left: 110px;
+	padding: 1em;
+	background-color: #fff
+}
+div#footer { 
+	clear:left;
+	text-align:center; 
+	padding: 0.5em;
+    background-color: #D6EFCC; 
+    color: #000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+div#menu ul { 
+/*	margin: 1em 0 1em 1em; */
+	margin: 1em 0 1em 1.5em;
+	padding: 0; 
+	list-style-type: none;
+	list-style-image: url(../grafica/images/bullet.gif);}
+}
+div#menu li { 
+	margin: 0;
+	padding: 0; 
+	list-style-image: url(../grafica/images/bullet.gif);}
+}
+div#menu a { 
+	color:#369;
+	font: normal bold 1.2em/1.6em arial,sans-serif;
+	text-decoration: none;
+}
+div#menu a:hover { 
+	color: #033;
+	text-decoration: underline
+}
+div#menu a#activelink { 
+	color: #033;
+	text-decoration: none
+}
+
+h1,h2 { 
+	margin: 0;
+	padding:0;
+}
+h1 { 
+	padding-left:0.5em;
+	font: bold 2.3em/80px arial,serif;
+}
+h2 { 
+	color: #999;
+	font-size: 1.5em;
+}
+
+
+th {
+	text-align: right;
+/*	font-size: 11px; */
+	font-weight: normal;
+}
+
+th.testo {
+	text-align: left;
+/*	font-size: 11px; */
+	font-weight: normal;
+}
+
+
+td {
+	text-align: left;
+	font-weight: normal;
+/*	font-size: 11px; */
+}
+
+fieldset {
+	font-weight: bold;
+}
+
+legend {
+	text-align: left;
+/*	font-size: 11px; */
+}
+
+form {
+/* removes space below form elements */
+	margin: 0;
+ 	padding: 0;
+ 	font-weight: normal;
+}
+
+/* Joomla core stuff */
+a:link, a:visited {
+	color: #c64934; text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #900;	text-decoration: none;
+	font-weight: bold;
+}
+
+
+
+
+/* Class */
+.testo_grassetto {
+	text-align: center;
+	font-weight: bold;
+	line-height: 300%;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+.testo_piccolo {
+	font-weight: normal;
+	text-decoration: none;
+	font-size: xx-small;
+}
+
+
+.testo {
+	font-weight: normal;
+	line-height: 100%;
+	text-decoration: none;
+	text-transform: none;
+	
+}
+
+.testo_a_dx {
+	font-weight: normal;
+	line-height: 100%;
+	text-decoration: none;
+	text-transform: none;
+	text-align: right;
+	
+}
+
+.titolo_generale {
+	text-align: center;
+}
+
+.titolo_pagina {
+	text-align: left;
+}
+
+.immagine {
+	border: 0;
+}
+
+
+label.error {
+/*		background: url('http://dev.jquery.com/view/trunk/plugins/validate/demo/images/unchecked.gif') no-repeat; */
+background: url('../grafica/images/unchecked.gif') no-repeat;
+		
+		padding-left: 16px;
+		margin-left: .3em;
+}
+label.valid {
+/*		background: url('http://dev.jquery.com/view/trunk/plugins/validate/demo/images/checked.gif') no-repeat; */
+background: url('../grafica/images/checked.gif') no-repeat;
+		display: block;
+		width: 16px;
+		height: 16px;
+}
+

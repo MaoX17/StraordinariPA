@@ -1,0 +1,588 @@
+
+	body {
+		color: #333;
+		margin: 15px; 
+		padding: 0px; 
+		background: #FFA url(../images/bg.gif);
+		font: 82%/130% Arial, Helvetica, sans-serif;
+		line-height:120%;
+		
+		height: 100%;
+		font-family: Arial, Helvetica, Sans Serif;
+		color: #333333;
+		/* background: #ffffff; */
+	}
+	
+	
+	
+	a { color:#00A; }
+	small { font-size: 85%; }
+
+/* ------------------------------------------------------------------------------- HEADER ------------------------------------------------------------------------------- */
+
+	#header { margin:0; padding:0; border:.1em solid #161; border-bottom:0; background:#FFF; } 
+	
+	#header #main_banner { margin:0; padding:0; border:0; border-bottom:.1em solid #161; background:#FDF2C4 url(../images/banner_provincia_prato.jpg) no-repeat bottom left; height:7.8em; vertical-align:bottom; }
+	#header #main_banner span, #header #main_banner h1 { position:absolute; left:-9000em; line-height:.1em; margin:0; padding:0; border:0; display:block; height:0; }
+	#header #main_banner #banner { width:18em; height:4em; margin-right:1em; margin-top:3.2em; font-size:.95em; line-height:1em; float:right; text-align: center; border: 1px solid #176f19; }
+	#header #main_banner #banner #banner_image { margin-right:1em; float:right; }
+	
+	#header .menu { margin:0; padding:0 1%; border:0; background:#d6efcc; height:1.6em; } /* l'altezza serve per Safari e Firefox, ad exlporer nun je frega */
+	#header .menu a { color:#161; }
+	#header .menu a, #header .menu span { margin:0; padding:0 .2em; border:0; }
+	/* #header .menu .last { padding:0; border:0;  } */
+	#header .menu_sx, #header .menu_dx { margin:0; padding:0; border:0; font-size:.9em; }
+	#header .menu_sx { width:25%; float:left; clear:left; text-align:left; } 
+	#header .menu_dx { width:70%; float:right; clear:right; text-align:right; }
+	.menub { font-weight:bold; }
+
+/* ------------------------------------------------------------------------------- BLOCCO CENTRALE ------------------------------------------------------------------------------- */
+	
+	#blocco_centrale, #blocco_centrale_unico, #blocco_centrale_home, #blocco_centrale_mappa { margin:0 auto; border:.1em solid #161; background:#FFF; }
+	#blocco_centrale { border-left:1em solid #161; }
+	#contenuto { margin:0; padding:0; border:0; 
+		background:#d6efcc url(../images/1600_25perc.gif) repeat-y 25%;
+	}	
+	body.due #contenuto #contenuto_fix { margin:0; padding:0; border:0;
+		background:transparent url(../images/1600_75perc_bianco.gif) repeat-y 75%;
+	}
+	body.tre #contenuto #contenuto_fix { margin:0; padding:0; border:0;
+		background:transparent url(../images/1600_75perc.gif) repeat-y 75%;
+	}
+
+/* ------------------------------------------------------------------------------- BLOCCO CENTRALE HOME ------------------------------------------------------------------------------- */
+	#blocco_centrale_home #contenuto { margin:0; padding:0; border:0; 
+		background:transparent;
+	}	
+	body.tre #blocco_centrale_home #contenuto #contenuto_fix { margin:0; padding:0; border:0;
+		background:transparent;
+	}
+
+	#blocco_centrale_home a { color:#333; }
+	#blocco_centrale_home a:hover { text-decoration:none; }
+	
+	/* -------------------------------------------------------------------------- FOOTER -------------------------------------------------------------------------- */
+
+		#footer { margin:0; padding:0 1%; border:0; border-top:.1em solid #161; background:#d6efcc; height:1.6em; background:#FFF; }	
+		#footer a, #footer span { margin:0; padding:0 .2em; border:0; }
+		#foot_sx, #foot_dx { margin:0; padding:0; border:0; font-size:.9em; height:1.6em; }
+		#foot_sx { width:70%; float:left; clear:left; text-align:left; } 
+		#foot_dx { width:25%; float:right; clear:right; text-align:right; }
+		#footer img, #footer a img { margin:0; padding:.4em 0; border:0; vertical-align:middle; }
+	
+/* HEADERS */	
+	
+	/* decidere se il titolo della pagina deve essere un H1 o un H2 */
+	h1, h2, h3 { color:#161; margin:0; padding:1em 0 .5em 0; border:0; }
+	h1 { font-size:1.5em;  }
+	h2 { font-size:1.3em;  }
+	h3 { font-size:1.2em;  }
+
+/* ------------------------------------------------------------------------------- 3 COLONNE ------------------------------------------------------------------------------- */
+
+	#sinistra { float:left; width:25%; padding:0; margin:0; } /* border:1px solid #FF0000; */
+	body.due #principale { float:left; width:69%; padding:0 1.5%; }
+	body.tre #principale { float:left; width:47%; padding:0; margin:0 1.5%; border:0; }
+	#destra { float:right; padding:0; margin:0; border:0; width:25%; } /* border:1px solid #FF0000; */
+
+	#blocco_centrale_unico #principale_unico { padding:0 1%; }
+
+	#blocco_centrale_home #sinistra, #blocco_centrale_home #destra { width:33%; }
+	#blocco_centrale_home #sinistra { float:left; padding:0; margin:0; } /* border:1px solid #FF0000; */
+	#blocco_centrale_home #principale { float:left; width:33%; padding:0; margin:0 auto; border:0; }
+	#blocco_centrale_home #destra { float:left; padding:.5em 0 0 0; margin:0; border:0; background:transparent; color:#333; } /* border:1px solid #FF0000; */
+	
+/* ------------------------------------------------------------------------------- DENTRO A SINISTRA ------------------------------------------------------------------------------- */
+
+	.form_cerca { padding:0; margin:0; border:0; background:#30A500; }
+	.form_cerca fieldset { border:0; margin:0; padding:1em; }
+	.form_cerca label { position:absolute; left:-9000em; font-size:.1em; line-height:.1em; }
+	.form_cerca input.text { width:8em; display:inline; width:60%; }
+	.form_cerca input.submit {  display:inline; width:30%; }
+
+	span.exh2 { 
+		font-family:Arial, Helvetica, sans-serif; /* Impact, */
+		font-size:1.2em; font-weight:bold; 
+		color:#161; 
+		margin:0 0 .5em 0; 
+		padding:.5em .8em;  /* padding:.5em 1.7em; */
+		border:0; border-bottom:.08em solid #161; 
+		display:block; 
+	}
+
+	#nav_sinistra { padding:0 0 0 1em; margin:0; border:0; line-height:1.4em; }
+
+	.menusin_l0 { list-style:none; margin:0; border:0; padding:0; }
+	.menusin_l0 li { font-weight:bold; margin-bottom:1em; }
+	.menusin_l0 li a { color:#333; }
+	.menusin li { margin-bottom:0; font-weight:bold; }
+	.menusin { list-style:square; margin:0; border:0; padding:0 1em 0 2em; } /* color:#161; */
+	.menusin a { color:#333; font-weight:normal; }
+	
+/* ------------------------------------------------------------------------------- DENTRO A PRINCIPALE ------------------------------------------------------------------------------- */
+
+	/* #principale div { margin-top:.5em; } */
+
+	#blocco_centrale #principale .corpo { margin:0; padding:0; border:0; }
+
+	#blocco_centrale #principale ul { list-style:square; } /* gli ul non possono stare dentro agli span ! */
+		
+	#blocco_centrale #principale .f_right_20, #blocco_centrale #principale .f_right_30, #blocco_centrale #principale .f_right_40, #blocco_centrale #principale .f_right_50, #blocco_centrale #principale .f_right_60, #blocco_centrale #principale .f_right_70  
+	{ float:right; clear:right; display:block; overflow:hidden; }
+	#blocco_centrale #principale .f_left_20, #blocco_centrale #principale .f_left_30, #blocco_centrale #principale .f_left_40, #blocco_centrale #principale .f_left_50, #blocco_centrale #principale .f_left_60, #blocco_centrale #principale .f_left_70 
+	{ float:left; clear:left; display:block; overflow:hidden; }
+
+	#blocco_centrale #principale .f_right_20, #blocco_centrale #principale .f_left_20 { width:20%; }
+	#blocco_centrale #principale .f_right_30, #blocco_centrale #principale .f_left_30 { width:30%; }
+	#blocco_centrale #principale .f_right_40, #blocco_centrale #principale .f_left_40 { width:40%; }
+	#blocco_centrale #principale .f_right_50, #blocco_centrale #principale .f_left_50 { width:50%; }
+	#blocco_centrale #principale .f_right_60, #blocco_centrale #principale .f_left_60 { width:60%; }
+	#blocco_centrale #principale .f_right_70, #blocco_centrale #principale .f_left_70 { width:60%; }
+	
+	#blocco_centrale #principale .fascia1, #blocco_centrale #principale .fascia2, #blocco_centrale #principale .titolo1, #blocco_centrale #principale .titolo2 { margin:.5em 0; padding:0 .1em; border:0; clear:both; text-transform:uppercase; font-weight:bold; }
+	#blocco_centrale #principale .fascia1, #blocco_centrale #principale .titolo1 { background:#161; color:#FFF; }
+	#blocco_centrale #principale .fascia2, #blocco_centrale #principale .titolo2 { background:#d6efcc; color:#161; }
+	
+	#blocco_centrale #principale ul, #blocco_centrale #principale ol 	{ padding:0; padding-left:1.4em; margin-left:0; margin-top:.5em; }
+	#blocco_centrale #principale ul li				{ margin:0; padding:0; border:0; list-style: square url(../images/ico-quad.gif);  }
+	#blocco_centrale #principale ol.lettere 		{ list-style-type:lower-alpha; }
+	#blocco_centrale #principale ol.lettere_m		{ list-style-type:upper-alpha; }
+
+	#blocco_centrale #principale ol, #blocco_centrale #principale ol.lettere, #blocco_centrale #principale ol.lettere_m  { padding-left:2em; }
+
+	#blocco_centrale #principale ol.lista_comunicati li  { margin-bottom:1em; }
+
+	#blocco_centrale #principale ul.lista_file { border:0; margin:1em 0; padding:0; width:100%; font-size:.85em; line-height:1.4em; border-top:.1em solid #d6efcc; border-bottom:.1em solid #d6efcc; list-style:none; }
+	#blocco_centrale #principale ul.lista_file li { border:0; margin:0; padding:.3em .1em; padding-left:1.4em; background-image:url(../images/ico_frecce_green.gif); background-repeat:no-repeat; background-position:.3em .7em; vertical-align:middle; }
+	#blocco_centrale #principale ul.lista_file li.bg_colorato { background-color:#d6efcc; }
+	#blocco_centrale #principale ul.lista_file div { width:88%; float:left; }
+	#blocco_centrale #principale ul.lista_file span { width:10%; float:right; clear:right; display:block; }
+
+	#blocco_centrale #principale ul.basicblu { margin-left: .2em; }
+	#blocco_centrale #principale ul.basicblu li { list-style: square url(../images/ico-quad_blu.gif); margin-left: .2em; }
+
+	#blocco_centrale #principale ul.attivitablu { margin-left: 0em; }
+	#blocco_centrale #principale ul.attivitablu li { list-style: square url(../images/ico-quad_blu.gif); }
+
+	#blocco_centrale #principale dl { margin:0; padding:0; border:0; }
+	#blocco_centrale #principale dl ul { padding:0; list-style:none; }
+	#blocco_centrale #principale dl dt { border:0; margin:0; padding:.3em .1em; padding-left:1.4em; background-image:url(../images/ico_frecce_green.gif); background-repeat:no-repeat; background-position:.3em .7em; vertical-align:middle; }
+	#blocco_centrale #principale dl dd { margin:0; padding:0; padding-left:1.4em; }
+	#blocco_centrale #principale dl dd.no_padding { padding:0; }
+
+	#blocco_centrale #principale dl.semplice { margin:0; padding:0; border:0; }
+	#blocco_centrale #principale dl.semplice dt { border:0; margin:0; padding:.3em .1em; vertical-align:middle; background:transparent; font-weight:bold; }
+	#blocco_centrale #principale dl.semplice dd { margin:0; padding:0; margin-bottom:1em; }
+
+	#blocco_centrale #principale .gruppo_di_box { margin:1em 0; padding:0; border:0; text-align:center; }
+	#blocco_centrale #principale .box_to_float_10em { width:11em; display:block; float:left; text-align:center; margin:.2em; padding:0; border:0; }
+	
+	#principale .frecce_centrate div, #principale .frecce_right div { padding:.5em; margin-top:1em; background:#FFF; }
+
+	#principale .frecce_left 	{	background:transparent url(../images/arrow01.gif) no-repeat bottom left; }
+	#principale .frecce_right 	{	background:transparent url(../images/arrow02.gif) no-repeat bottom right; }
+	#principale .frecce_centrate {	background:transparent url(../images/arrow03.gif) no-repeat 50%;  }
+
+	#principale .fascia_news_giornali { background:transparent url(../images/fascia_news_giornali.gif) no-repeat 50%; margin:1em 0; padding:0; height:18em; clear:both; }
+	#principale .fascia_news_giornali span { display:none; }
+
+	.hai_cercato { margin-bottom:1em; }
+	
+	/* usati nella pagina dei web gadget desktop */
+	#principale .f_left_25_nobr { float:left; display:block; overflow:hidden; }
+	#principale .f_right_25_nobr { float:right; display:block; overflow:hidden; }
+	#principale .f_right_25_nobr, #principale .f_left_25_nobr { width:25%; margin-bottom:2em; }
+
+
+	.msgmanca { text-align:center; font-weight:bold; }
+
+	/* HOME */
+
+				
+/* ------------------------------------------------------------------------------- DENTRO A DESTRA ------------------------------------------------------------------------------- */
+
+	#destra .verde { margin:0; padding:0 1em; border:0; background:#30A500; color:#FFF; }
+	#destra .verde a { color:#FFF; }
+
+	#blocco_centrale #destra p, #blocco_centrale #destra ul { margin:0; padding:0; border:0; padding-top:.5em; padding-left:0em; }
+	#blocco_centrale #destra ul li { margin:0 0 .7em 0; padding:0; border:0; line-height:1.1em; list-style:none; font-size:.95em; }
+	#blocco_centrale #destra ul li ul { margin-top:0; padding-top:.2em; }
+	#blocco_centrale #destra ul li ul li { list-style:square; }
+	#blocco_centrale #destra acronym { font-weight:bold; }
+	#blocco_centrale #destra .textwhitebes { font-weight:bold; font-size:1.1em; }
+
+	#blocco_centrale #destra .gruppo_link { margin:0; padding:0; border:0; padding-top:1em; }
+	#blocco_centrale #destra .gruppo_link ul ul { margin-left: 2em !important; }
+
+	#blocco_centrale #destra img.freccia_col_dx { margin:0; padding:.4em 0; border:0; vertical-align:middle; }
+	#blocco_centrale #destra .gruppo_link .textwhitebes { background:transparent url(../images/ico_frecce.gif) no-repeat 0 .3em; padding-left:1em; }
+
+	#blocco_centrale #destra #sub_destra, .sottoilverde { margin:0; padding:1em; border:0; }
+	
+	/* HOME */
+		
+
+/* ------------------------------------------------------------------------------- FORMs ------------------------------------------------------------------------------- */
+
+	form.form_1_per_riga { padding:0; margin:.5em 0; border:0; }
+	.form_1_per_riga fieldset { border:0; margin:0; padding:.5em .4em 0 .4em; }
+	.form_1_per_riga fieldset legend { display:none; }
+	.form_1_per_riga fieldset legend.visibile { display:block; }
+	.form_1_per_riga div { width:98%; display:block; background:#FFF; margin:.5em auto; border:0; padding:.5em; }
+
+	.form_1_per_riga div label { width:48%; margin:0; border:0; padding:0; float:left; }
+	.form_1_per_riga div label.label_inline { display:inline; float:none; width:100%; }
+	.form_1_per_riga div input, .form_1_per_riga div select, .form_1_per_riga div textarea { width:48%; float:left; margin:0; }
+	
+	.form_1_per_riga fieldset.submit_reset { text-align:center; margin:0; }
+	.form_1_per_riga input.submit, .form_1_per_riga input.reset, .form_1_per_riga input.submit_f_right { display:inline; width:20%; }
+	.form_1_per_riga input.submit_f_right { float:right; }
+
+	#blocco_centrale_home input, #blocco_centrale_home select { margin:.5em 0; display:inline; }
+	#blocco_centrale_home input { width:18%; }
+	#blocco_centrale_home select { width:80%; }
+	
+	#blocco_centrale_home fieldset { border:0; margin:0; padding:0; }
+	
+	.form_1_per_riga input.w_small { width:4em; }
+	.form_1_per_riga input.w_auto { width:auto; }
+	.form_1_per_riga input.no_float { float:none; }
+
+	span.etichetta_radio { margin:.2em; }
+	
+	.form_1_per_riga div.bb_blu { border-bottom:.1em solid #00128A; }
+
+	.form_1_per_riga div.pv_p5 { padding-top:.5em; padding-bottom:.5em; }	
+	.form_1_per_riga div.pv_1 { padding-top:1em; padding-bottom:1em; }
+	
+	.form_1_per_riga div.mv_p5 { margin-top:.5em; margin-bottom:.5em; }	
+	.form_1_per_riga div.mv_1 { margin-top:1em; margin-bottom:1em; }
+	
+	.label_strong label { font-weight:bold; }
+	
+	div.mod_label	{ margin:0 0 .5em 0; border:0; padding:0; display:block; float:none; border-bottom:.1em solid #999; }
+	div.mod_label.noborder	{ border:0; }
+	
+	span.radio_cartolina { text-align:center; margin:.5em 1em;  }
+	.radio_cartolina label { display:block;  }
+
+	.form_1_per_riga fieldset legend.fascia2 { display:block; margin:.5em 0; padding:0 .1em; border:0; clear:both; width:100%; text-transform:uppercase; font-weight:bold; background:#d6efcc; color:#161; }
+
+
+/* ------------------------------------------------------------------------------- COMUNI ------------------------------------------------------------------------------- */
+
+	/* .textline { margin:0; padding:0; border:0; } */
+
+	.bg_verde_c { background:#d6efcc; }
+	.border_verde_c { border:.2em solid #d6efcc !important; }
+	.border_blu { border:.1em solid #00128A; }
+	.border_red { border:.1em solid #C00; }
+
+	.text_gray { 
+		/* se serve a rendere evidenti delle informazioni ci vorrebbe un title nel div - l'informazione non deve essere basata solo sul colore - nota: firefox non lo prende ?? */
+		color:#555; /* testato su bianco */
+	}
+	.text_green { 
+		/* se serve a rendere evidenti delle informazioni ci vorrebbe un title nel div - l'informazione non deve essere basata solo sul colore - nota: firefox non lo prende ?? */
+		color:#161; 
+	}
+	.text_red { 
+		/* se serve a rendere evidenti delle informazioni ci vorrebbe un title nel div - l'informazione non deve essere basata solo sul colore - nota: firefox non lo prende ?? */
+		color:#C00; 
+	}
+	.text_red strong a { 
+		/* forzo questa cosa via ccs altrimenti i titoli dei bandi in formazione lavoro che sono link al sito della regione verrebbero blu */
+		color:#C00; 
+	}
+	.text_blu { 
+	 	color:#00128A;
+	}
+	.text_blu_bold, span.text_blu_bold, div.text_blu_bold { 
+		/* se serve a rendere evidenti delle informazioni ci vorrebbe un title nel div - l'informazione non deve essere basata solo sul colore - nota: firefox non lo prende ?? */
+		font-weight:bold;
+		color:#00128A; /* 0045BD */
+	}
+	.text_red_bold, span.text_red_bold, div.text_red_bold { 
+		/* se serve a rendere evidenti delle informazioni ci vorrebbe un title nel div - l'informazione non deve essere basata solo sul colore - nota: firefox non lo prende ?? */
+		font-weight:bold;
+		color:#C00;
+	}
+	div.text_blu_bold { margin-top:1em; }
+	
+	#principale li ul { 
+		font-weight:normal;
+		color:#333;
+		font-size:.95em;
+		list-style-type:circle;
+	}
+
+	.clear { clear:both; }
+	.clear_r { clear:right; }
+	br.clear { clear:both; line-height:.1em; margin:0; padding:0; border:0; }
+
+	a, a img, img.mappa { border:0; }
+	
+	#scorciatoie, .null, .scorciatoie { 
+		position:absolute; left:-9000em;
+		line-height:.1em; margin:0; padding:0; border:0; display:block; height:0; 
+	}
+
+	.no_height { 
+		line-height:.1em; margin:0; padding:0; border:0; display:block; height:0; 
+	}
+
+
+	.f_right { float:right; }
+	.f_left { float:left; }	
+	.no_float { float:none; }
+
+	img.f_right, img.f_left { margin:.2em; }	
+
+	.a_center { text-align:center; }
+	.a_middle { vertical-align:middle !important; }
+	.a_bottom { vertical-align:bottom; }
+	.a_left { text-align:left; }
+	.a_right { text-align:right; }
+
+
+	.pv_p5 { padding-top:.5em; padding-bottom:.5em; }	
+	.pv_1 { padding-top:1em; padding-bottom:1em; }
+	.po_p5 { padding-left:.5em; padding-right:.5em; }	
+	.po_1 { padding-left:1em; padding-right:1em; }
+/*	.po_auto { padding-left:auto; padding-right:auto; } */
+	.pt_p5 { padding-top:.5em; }	
+	.pt_1 { padding-top:1em; }
+	.pb_p5 { padding-bottom:.5em; }	
+	.pb_1 { padding-bottom:1em; }
+	.p_p5  { padding:.5em; }
+	
+	.mv_p5 { margin-top:.5em; margin-bottom:.5em; }	
+	.mv_1 { margin-top:1em; margin-bottom:1em; }
+	.mv_2 { margin-top:2em; margin-bottom:2em; }
+	.mo_p5 { margin-left:.5em; margin-right:.5em; }	
+	.mo_1 { margin-left:1em; margin-right:1em; }
+	.mo_auto { margin-left:auto; margin-right:auto; }
+	.mt_p5 { margin-top:.5em; }	
+	.mt_1 { margin-top:1em; }
+	.mt_1p5 { margin-top:1.5em; }
+	.mb_p5 { margin-bottom:.5em; }	
+	.mb_1 { margin-bottom:1em; }
+	.mb_2 { margin-bottom:2em; }
+	.mr_p5 { margin-right:.5em; }	
+	.mr_1 { margin-right:1em; }
+	.mr_2 { margin-right:2em; }
+	.ml_p5 { margin-left:.5em; }	
+	.ml_1 { margin-left:1em; }
+	.ml_2 { margin-left:2em; }
+
+	.m_p2 { margin:.2em; }	
+	.m_p4 { margin:.4em; }	
+	.m_p5 { margin:.5em; }	
+	.m_p6 { margin:.6em; }	
+	.m_p8 { margin:.8em; }	
+	.m_1 { margin:1em; }	
+
+	.lh_1	{ line-height:1em; }
+	.lh_1p2 { line-height:1.2em; }
+	.lh_1p4 { line-height:1.4em; }
+	.lh_1p6 { line-height:1.6em; }
+	
+	.h2em { height:2em; }
+	.h3em { height:3em; }
+	.h4em { height:4em; }
+	.h5em { height:5em; }
+	.h8em { height:8em; }
+	.h10em { height:10em; }
+	.h15em { height:15em; }
+	.h20em { height:20em; }
+	.h30em { height:30em; }
+	.h40em { height:40em; }
+	.h50em { height:50em; }
+
+	img.bordo { border:.8em solid #d6efcc; }
+	img.bg_red { border:.1em solid #C00; }
+
+	.bordo_blu { border:.1em solid #00128A; }	
+	.bordo_nero { border:.1em solid #000; }	
+	.bb_blu { border-bottom:.1em solid #00128A; }
+	
+	.w_20 { width:20%; }
+	.w_25 { width:25%; }
+	.w_30 { width:30%; }
+	.w_40 { width:40%; }
+	.w_50 { width:50%; }
+	.w_60 { width:60%; }
+	.w_70 { width:70%; }
+	.w_80 { width:80%; }
+	.w_90 { width:90%; }
+
+
+/**/
+
+	.lista_file img, .lista_file a img { border:0; margin:0; padding:.3em 0; vertical-align:middle; }
+	
+	.list_style_none ul, .list_style_none li, li.list_style_none  { list-style: none outside none !important; list-style-type: none !important; list-style-image: none !important; }
+
+/**/
+
+	.sfondo_texture_blu { background:#00128A url(../images/bg_blu.gif) left bottom; padding-bottom:1em; border-top:.1em solid #00128A;}
+	.sfondo_verde { background:#161; }
+
+/* --- TABLE --- */
+
+	
+	
+	td.perc10 { width:10%; }
+	td.perc15 { width:15%; }
+	td.perc20 { width:20%; }
+	td.perc30 { width:30%; }
+	td.perc40 { width:40%; }
+
+	table.lista_file { border:0; margin:1em 0; padding:0; width:100%; font-size:.95em; line-height:1.4em; border-top:.1em solid #d6efcc; border-bottom:.1em solid #d6efcc; }
+	table.lista_file tr { border:0; margin:0; padding:.8em 0; vertical-align:top; }
+	table.lista_file tr.bg_colorato { background-color:#d6efcc; } 
+	table.lista_file tr th, table tr td { border:0; margin:0; padding:.3em .1em; }
+	table.lista_file tr td { width:88%; }
+	table.lista_file td.ico_frecce { padding-left:1.4em; background-image:url(../images/ico_frecce_green.gif); background-repeat:no-repeat; background-position:.3em .7em; }
+		
+	table.tipo_ricerca_atti { border:0; margin:0; padding:.4em; font-size:.9em; line-height:1.4em; }
+	table.tipo_ricerca_atti tr { border:0; margin:0; padding:.8em 0; }
+	table.tipo_ricerca_atti tr th, table.tipo_ricerca_atti tr td { border:0; margin:0; padding:.2em .4em; background:#FFF; vertical-align:top; }
+
+	.nascondi { display:none; }
+
+	table.areasetteTV { border:0; margin:0; padding:0; font-size:.9em; line-height:1.4em; width:100%; }
+	table.areasetteTV tr { border:0; margin:0; padding:.8em 0; }
+	table.areasetteTV tr th, table.areasetteTV tr td { border:0; margin:0; padding:.2em .4em; background:#FFF; vertical-align:top; text-align:center; }
+	table.areasetteTV tr th { background:#d6efcc; color:#161; }
+	table.areasetteTV tr.colore td { background:#d6efcc; }
+	table.areasetteTV th.no_colore { background:#FFF; }
+
+	table.th_red.bordo_verde_c, table.th_verde_c { width:100%; }
+	table.th_red th { color:#C00; vertical-align:top; text-align:left; }
+	table.bordo_verde_c th, table.bordo_verde_c td  { border:.1em solid #d6efcc; padding:.5em; }
+	table.bordo_verde_c caption, table.th_verde_c caption { font-weight:bold; padding:.5em; width:100%; }
+	
+	table.th_verde_c th, table.th_verde_c td { border:.1em solid #d6efcc; padding:.5em; vertical-align:top;  }
+	table.th_verde_c th { margin:0; padding:.3em .1em; padding-left:1.4em; background:#d6efcc url(../images/ico_frecce_green.gif) no-repeat .3em .7em; vertical-align:middle; text-align:left; color:#161; font-weight:bold; }
+
+	table.border_verde_c th, table.border_verde_c td, table.tipo_ricerca_atti.border_verde_c th, table.tipo_ricerca_atti.border_verde_c td { border:.2em solid #d6efcc !important; }
+	.th_left th { text-align:left; }
+	.th_left thead { display:block !important; }
+
+/* --- ipotesi --- */
+
+	a.sito_esterno {
+		border:0; margin:0; padding:.3em .1em; padding-left:1.4em; background-image:url(../images/ico_frecce_green.gif); background-repeat:no-repeat; background-position:.3em .7em; vertical-align:middle;
+	}
+	.sito_esterno span {
+		position:absolute; left:-9000em;
+		line-height:.1em; margin:0; padding:0; border:0; display:block; height:0; 
+	}
+
+	.dec_none, a .dec_none, a span.dec_none { text-decoration:none; }
+
+/* ------------------------------------------------------------------------------- FINE ------------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------------- HOME ------------------------------------------------------------------------------- */
+			
+
+
+			
+			div.homeCol1, div.homeCol3, div.homeCol2 { float: left; }
+
+			div.homeCol1, div.homeCol3 { width: 28%; }
+			div.homeCol2 { width: 44%; }
+
+			div.homeIndexCol1, div.homeIndexCol2, div.homeIndexCol3 {
+				text-align: left;
+				border: .1em solid #D6EFCC;
+				margin: .8em .4em;
+			}
+			
+			div.mainfld { padding:.5em; background:#d6efcc; font-weight:bold; }
+			#blocco_centrale_home h2 { font-size:1.1em; }
+			#blocco_centrale_home h2.mainfld { padding:.5em; background:#d6efcc; font-weight:bold; }
+			div.mainfldcontent { padding: .5em; }
+			div.mainfld.titolo { color:#161; }
+			#blocco_centrale_home h2.mainfld.titolo { color:#161; }
+			select.homeIndexCol1 { width: 80%; }
+			select.homeIndexCol2 { width: 80%; }
+			select.homeIndexCol3 { width: 80%; }
+			input.btn_homeIndexCol1 { width: 10%; }
+			input.btn_homeIndexCol2 { width: 10%; }
+			input.btn_homeIndexCol3 { width: 10%; }
+			
+			div.inevidenzainhome 			{ margin: .5em .5em 1em .5em; }
+			div.inevidenzainhome img 		{ border: .1em solid red; }
+			div.inevidenzainhome.right img 	{ float:right; clear:right; margin-left:.5em; }
+			div.inevidenzainhome.right  	{ text-align:right; }
+			div.inevidenzainhome.left img 	{ float:left; clear:left; margin-right:.5em; }
+			div.inevidenzainhome.left 	 	{ text-align:left; }
+
+			div.homePane {
+				padding: .5em;
+				float: left;
+			}
+			br.homeCleaner {
+				clear: both;
+			}
+			
+			.mainfldcontent { padding-top: 1em; padding-bottom: 1.5em; }
+			
+			.filodiretto_home img { border:0; margin:.2em; vertical-align:middle; }
+						
+			p.elencohome { margin:.8em 0 .2em 0; border:0; padding:0; }
+			p.elencohome.titolo { font-weight:bold; }
+			
+			div.homeCol1 form, div.homeCol3 form, div.homeCol2 form, div.homeCol1 fieldset, div.homeCol3 fieldset, div.homeCol2 fieldset {
+				margin:0; 
+				border:0;
+				padding:0;
+			} 
+			div.homeCol1 legend, div.homeCol3 legend, div.homeCol2 legend {
+				margin:.8em 0 .2em 0;
+				border:0;
+				padding:0;
+				font-weight:bold;
+			} 
+			div.homeCol1 label, div.homeCol3 label, div.homeCol2 label { 
+				display:none;	
+			} 
+
+			ul.elencohome, ul.filodiretto_home {
+				font-style: normal;
+				font-weight: normal;
+				color: #000000;
+				font-variant: normal;
+/* commentati da enrico (20070430 altrimenti il css non passa i test del w3c
+				font-stretch: normal;
+				font-size-adjust: none;
+*/
+				margin:0 0 .8em  0;
+				border:0;
+				padding:0 1em 0 2em;
+			}
+
+			ul.elencohome li, ul.filodiretto_home li {
+				padding:0;
+				margin: 0;
+				border: 0;
+				/* line-height:1.4em; */
+			}
+			
+			ul.elencohome li {
+				list-style-image: url(../images/ico_duepunti_red.gif);
+			}
+
+			 ul.filodiretto_home 	{ padding:0; list-style-type: none; }
+			 ul.filodiretto_home li 	{ list-style-type: none; }
+			
+			
+			
+/* ------------------------------------------------------------------------------- /HOME ------------------------------------------------------------------------------- */
+
+
+/* AGGIUNTO DA ANTONIO IL 19.01.2007 */
+    .sfondo_texture_blu table { width:100%; }

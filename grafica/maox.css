@@ -1,0 +1,41 @@
+/* Classi Personalizzate */
+
+/*
+     Alcune non fanno nulla, sono definite x il validatore:
+    http://casperin.github.io/nod/
+*/
+
+.testo_richiesto {
+}
+
+.select_richiesto {
+}
+
+.email_richiesto {
+}
+
+.password_richiesto {
+}
+
+.password_sameas {
+}
+
+
+.block {
+    display: block;
+}
+
+.groppoCheck {
+
+}
+
+label.error {
+    color:red;
+}
+
+input.error
+{
+    border-color:red;
+    border-style:solid;
+    border-width:1px;
+}
