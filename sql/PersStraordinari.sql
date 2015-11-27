@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50173
 File Encoding         : 65001
 
-Date: 2015-11-05 14:04:35
+Date: 2015-11-27 12:36:26
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -41,7 +41,7 @@ CREATE TABLE `log` (
   `operazione` varchar(100) NOT NULL,
   `ip_sorgente` varchar(15) NOT NULL,
   PRIMARY KEY (`id_log`)
-) ENGINE=InnoDB AUTO_INCREMENT=9603 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=9948 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for ruoli
@@ -71,7 +71,7 @@ CREATE TABLE `straordinari` (
   `note_dirigente` varchar(254) DEFAULT NULL,
   PRIMARY KEY (`id_straordinario`),
   UNIQUE KEY `index_uniq_01` (`id_utente`,`data_richiesta`,`approvato`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=3014 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3139 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for utenti
@@ -86,4 +86,4 @@ CREATE TABLE `utenti` (
   `email` varchar(60) NOT NULL,
   `tel` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`id_utente`)
-) ENGINE=InnoDB AUTO_INCREMENT=143 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=145 DEFAULT CHARSET=latin1;

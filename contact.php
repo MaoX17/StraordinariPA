@@ -23,7 +23,7 @@ $factory->setDsn($cfg->getValue('DSN'));
 $db=$factory->createInstance();
 //********************************************************
 
-$titolo_pagina = "Elenco Ditte - Provincia di Prato";
+$titolo_pagina = "Gestione Straordinari - Provincia di Prato";
 
 include($percorso_relativo."grafica/head_bootstrap.php");
 include($percorso_relativo."grafica/body_head_bootstrap.php");
